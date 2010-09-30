@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name="viewport" content="user-scalable=no, width=device-width" />
+		<title>http://invoicethat.com</title>
+		<link rel="apple-touch-startup-image" href="images/myCustomStartupGraphic.png" />
+		<link href="jqtouch/jqtouch.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<link href="jqtouch/themes/jqt/theme.min.css" media="screen" rel="stylesheet" type="text/css" />
+		<!--
+		<link href="mobile.css" media="only screen and (max-width: 480px)" rel="stylesheet" type="text/css" />
+		<link href="mobile.css" media="only screen and (min-width: 481px)" rel="stylesheet" type="text/css" />
+		<script src="mobile.js" type="text/javascript"></script>
+		-->
+		<script src="jqtouch/jquery-1.4.2.min.js" type="text/javascript"></script>
+		<script src="jqtouch/jqtouch.min.js" type="text/javascript"></script>
+		<script type='text/javascript'>
+			//<![CDATA[
+			$.jQTouch({
+				icon: './images/apple-touch-icon.png',
+				preloadImages: [
+					'./jqtouch/themes/apple/img/chevron.png',
+					'./jqtouch/themes/jqt/img/backButton.png',
+					'./jqtouch/themes/jqt/img/blueButton.png'
+				]
+			});
+			//]]>
+		</script>
+	</head>
+	<body>
+		<div class="current" id="home">
+			<div class="toolbar">
+			</div>
+			
+			<div id="container">
+				<br />
+				<p align="center">
+					<img src="./images/logo.png">
+					<br />
+					<br />
+					<br />
+					<strong>Web-based invoicing</strong>
+				</p>
+				<br />
+				<br />
+				<a class="button" href="#pricing">Try us FREE for 30 days</a>
+				<br />
+				<br />
+				<a id="login" class="button" href="http://invoicethat.local/login">Login to your account</a>
+				<br />
+				<br />
+			</div>
+			
+			<div class="info" id="footer">
+				<br />
+				Copyright &copy; 2010 <a href="http://chipcastle.com">Chip Castle Dot Com, Inc.</a>
+				<br />
+			</div>
+			
+			<script type='text/javascript'>
+				//<![CDATA[
+				  $(function() {
+					$("a#login").tap(function (e) {
+						alert('login');
+					  //return app.load_home('/login');
+					});
+				  
+//					$("a#signup").tap(function (e) {
+//					  alert('tap a#signup');
+//					});
+				  });
+				//]]>
+			</script>
+		</div>
+		
+		<div id="pricing">
+			<ul>
+				<li>
+				  <p class="plan">
+					<h2>Lite plan $7/month</h2>
+					<ol>
+						<li>20 invoices/month</li>
+						<li>Unlimited clients</li>
+						<li>Secure connection</li>
+						<li>No PDF Invoices</li>
+					</ol>
+				  </p>
+				  <form action="https://www.invoicethat.com//signup/lite" id="lite_form" method="post">
+					<input name="commit" type="submit" value="Sign Up" />
+				  </form>
+				</li>
+				<li>
+				  <p class="plan">
+					<h2>Brisk $14/month</h2>
+					<ol>
+						<li>50 invoices/month</li>
+						<li>Unlimited clients</li>
+						<li>Secure connection</li>
+						<li>PDF Invoices</li>
+					</ol>
+				  </p>
+				  <form action="https://www.invoicethat.com/signup/brisk" id="brisk_form" method="post">
+					<input name="commit" type="submit" value="Sign Up" />
+				  </form>
+				</li>
+				<li>
+				  <p class="plan">
+					<h2>Jammin $24/month</h2>
+					<ol>
+						<li>100 invoices/month</li>
+						<li>Unlimited clients</li>
+						<li>Secure connection</li>
+						<li>PDF Invoices</li>
+						<li>Paypal payments</li>
+					</ol>
+				  </p>
+				  <form action="https://www.invoicethat.com/signup/jammin" id="jammin_form" method="post">
+					<input name="commit" type="submit" value="Sign Up" />
+				  </form>
+				</li>
+			</ul>
+		</div>
+    </div>
+	</body>
+</html>
