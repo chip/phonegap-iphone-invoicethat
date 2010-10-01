@@ -2,26 +2,40 @@
 /* See http://www.jslint.com/ */
 
 var jQT = new $.jQTouch({
-						//icon: 'apple-touch-icon.png',
-						//startupScreen: "apple-touch-startup.png",
-						statusBar: 'black-translucent',
-						cacheGetRequests: false,
-						preloadImages: [
-										'/jqtouch/themes/jqt/img/back_button.png',
-										'/jqtouch/themes/jqt/img/back_button_clicked.png',
-										'/jqtouch/themes/jqt/img/button_clicked.png',
-										'/jqtouch/themes/jqt/img/grayButton.png',
-										'/jqtouch/themes/jqt/img/whiteButton.png',
-										'/jqtouch/themes/jqt/img/loading.gif'
-										]
-						});
+	icon: './images/apple-touch-icon.png',
+	statusBar: 'black-translucent',
+	cacheGetRequests: false,
+	preloadImages: [
+		'./jqtouch/themes/apple/img/chevron_circle.png',
+		'./jqtouch/themes/apple/img/back_button_clicked.png',
+		'./jqtouch/themes/apple/img/button_clicked.png'
+	]
+});
 
-var app = {	
-	load_home: function(url) {
-		$.get(url, function(data) {
-			  // alert('load_home url=' + url);
-			  $('.current#home').html(data);
-			  });
-		return false;
-	}
-};
+$(function() {
+
+	var app = {	
+		load_home: function(url) {
+			alert('load_home url=' + url);
+			$('body').append('<div id="progress">Loading...</div>');
+			alert('load_home progress');
+			$.get(url, function(data) {
+				alert('load_home get url=' + url);
+				$('.current#home').html(data);
+			});
+			alert('load_home progress remove');
+			$('#progress').remove();
+			return false;
+		}
+	};
+  
+	$("a#login").tap(function (e) {
+		alert('tap a#login');
+		return app.load_home("http://invoicethat.local/login");
+	});
+
+	$("a#signup").tap(function (e) {
+		alert('tap a#signup');
+		return app.load_home("http://invoicethat.local/signup");
+	});
+});
