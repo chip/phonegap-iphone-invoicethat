@@ -56,7 +56,7 @@ $(function() {
 		return iphone_app.load_home("a#login");
 	});
 
-	$("a#signup").tap(function (e) {
-		return iphone_app.load_home("a#signup");
+	$("a#pricing").tap(function (e) {
+		return iphone_app.load_home("a#pricing");
 	});
 });
