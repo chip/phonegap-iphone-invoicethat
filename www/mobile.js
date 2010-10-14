@@ -29,12 +29,9 @@ var jQT = new $.jQTouch({
 	]
 });
 
-var devel = true;
+var devel = false;
 
 $(function() {
-	//
-	// Need to setup iphone, mobile and m subdomains locally and on slice!!!
-	//
 	var base_url = devel ? 'http://iphone.invoicethat.local' : 'http://iphone.invoicethat.com'
 	var iphone_app = {	
 		load_home: function(id) {

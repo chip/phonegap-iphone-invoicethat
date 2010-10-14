@@ -29,8 +29,6 @@
 		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
 		307D28A2123043360040C0FA /* PhoneGapBuildSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 307D28A1123043350040C0FA /* PhoneGapBuildSettings.xcconfig */; };
 		30E1352710E2C1420031B30D /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30E1352610E2C1420031B30D /* PhoneGap.plist */; };
-		EA25B8A9124D8A78007FFB35 /* pricing.html in Resources */ = {isa = PBXBuildFile; fileRef = EA25B8A8124D8A78007FFB35 /* pricing.html */; };
-		EAC5A600124EDCC000AA2F61 /* iphone.js in Sources */ = {isa = PBXBuildFile; fileRef = EAC5A5FF124EDCC000AA2F61 /* iphone.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +52,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* phonegap_iphone_invoicethatAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phonegap_iphone_invoicethatAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* phonegap_iphone_invoicethatAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = phonegap_iphone_invoicethatAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* phonegap-iphone-invoicethat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "phonegap-iphone-invoicethat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* InvoiceThat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InvoiceThat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,8 +75,6 @@
 		30E1352610E2C1420031B30D /* PhoneGap.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PhoneGap.plist; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* phonegap_iphone_invoicethat_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phonegap_iphone_invoicethat_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* phonegap_iphone_invoicethat-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "phonegap_iphone_invoicethat-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-		EA25B8A8124D8A78007FFB35 /* pricing.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = pricing.html; path = www/pricing.html; sourceTree = "<group>"; };
-		EAC5A5FF124EDCC000AA2F61 /* iphone.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = iphone.js; path = www/iphone.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +114,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* phonegap-iphone-invoicethat.app */,
+				1D6058910D05DD3D006BFB54 /* InvoiceThat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,9 +122,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				EAC5A5FF124EDCC000AA2F61 /* iphone.js */,
 				301BF56E109A69640062928A /* www */,
-				EA25B8A8124D8A78007FFB35 /* pricing.html */,
 				301BF52D109A57CC0062928A /* PhoneGapLib.xcodeproj */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				307C750510C5A3420062BCA9 /* Plugins */,
@@ -200,9 +194,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* phonegap-iphone-invoicethat */ = {
+		1D6058900D05DD3D006BFB54 /* InvoiceThat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "phonegap-iphone-invoicethat" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "InvoiceThat" */;
 			buildPhases = (
 				30E9A9A110B758320022D3BA /* Copy PhoneGap Javascript */,
 				304B58A110DAC018002A0835 /* Touch www folder */,
@@ -215,9 +209,9 @@
 			dependencies = (
 				301BF551109A68C00062928A /* PBXTargetDependency */,
 			);
-			name = "phonegap-iphone-invoicethat";
+			name = InvoiceThat;
 			productName = "phonegap-iphone-invoicethat";
-			productReference = 1D6058910D05DD3D006BFB54 /* phonegap-iphone-invoicethat.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* InvoiceThat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -225,8 +219,12 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "phonegap-iphone-invoicethat" */;
+			attributes = {
+				ORGANIZATIONNAME = "Chip Castle Dot Com, Inc.";
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "InvoiceThat" */;
 			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
 				English,
@@ -244,7 +242,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* phonegap-iphone-invoicethat */,
+				1D6058900D05DD3D006BFB54 /* InvoiceThat */,
 			);
 		};
 /* End PBXProject section */
@@ -270,7 +268,6 @@
 				302CC88910CD8CCE00C49659 /* icon.png in Resources */,
 				30E1352710E2C1420031B30D /* PhoneGap.plist in Resources */,
 				307D28A2123043360040C0FA /* PhoneGapBuildSettings.xcconfig in Resources */,
-				EA25B8A9124D8A78007FFB35 /* pricing.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,7 +311,6 @@
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* phonegap_iphone_invoicethatAppDelegate.m in Sources */,
-				EAC5A600124EDCC000AA2F61 /* iphone.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +335,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = phonegap_iphone_invoicethat_Prefix.pch;
 				INFOPLIST_FILE = "phonegap_iphone_invoicethat-Info.plist";
-				PRODUCT_NAME = "phonegap-iphone-invoicethat";
+				PRODUCT_NAME = InvoiceThat;
 			};
 			name = Debug;
 		};
@@ -351,7 +347,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = phonegap_iphone_invoicethat_Prefix.pch;
 				INFOPLIST_FILE = "phonegap_iphone_invoicethat-Info.plist";
-				PRODUCT_NAME = "phonegap-iphone-invoicethat";
+				PRODUCT_NAME = InvoiceThat;
 			};
 			name = Release;
 		};
@@ -370,7 +366,7 @@
 					"-Obj-C",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				USER_HEADER_SEARCH_PATHS = "$(PHONEGAPLIB)/Classes/JSON $(PHONEGAPLIB)/Classes";
 			};
 			name = Debug;
@@ -390,7 +386,7 @@
 					"-Obj-C",
 				);
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.0;
+				SDKROOT = iphoneos4.1;
 				USER_HEADER_SEARCH_PATHS = "$(PHONEGAPLIB)/Classes/JSON $(PHONEGAPLIB)/Classes";
 			};
 			name = Release;
@@ -398,7 +394,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "phonegap-iphone-invoicethat" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "InvoiceThat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
@@ -407,7 +403,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "phonegap-iphone-invoicethat" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "InvoiceThat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
