@@ -3,7 +3,7 @@ body, #jqt {
 }
 
 body > *, #jqt > * {
-    background: rgb(197,204,211) url(img/pinstripes.png);
+	background: rgb(255,255,255);
 }
 
 #jqt h1, #jqt h2 {
