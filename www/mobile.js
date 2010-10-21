@@ -29,15 +29,17 @@ var jQT = new $.jQTouch({
 	]
 });
 
-var devel = false;
-
 $(function() {
-	var base_url = devel ? 'http://iphone.invoicethat.local' : 'http://iphone.invoicethat.com'
+	alert('inside mobile.js');
+	var devel = true;
+	var base_url = devel ? 'http://m.invoicethat.local' : 'https://m.invoicethat.com';
 	var iphone_app = {	
 		load_home: function(id) {
-			$('#progress').show();
+			//$('#progress').show();
+			alert('load_home');
+			$('body').append('<div id="progress">Loading.........</div>');
 			var href = $(id).attr('href');
-			//alert('id=' + id + ' href=' + href);
+			alert('id=' + id + ' href=' + href);
 
 			var url = base_url + href;
 			//alert('load_home url=' + url);
@@ -45,6 +47,7 @@ $(function() {
 				//alert('load_home get url=' + url);
 				$('.current#home').html(data);
 			});
+			$('#progress').remove();
 			return false;
 		}
 	};
