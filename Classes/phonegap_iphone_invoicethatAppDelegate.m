@@ -16,6 +16,10 @@
 	/** If you need to do any extra app-specific initialization, you can do it here
 	 *  -jm
 	 **/
+	//special setting to accept cookies via ajax-request
+	NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+	[cookieStorage setCookieAcceptPolicy:NSHTTPCookieAcceptPolicyAlways];
+	
     return [super init];
 }
 
