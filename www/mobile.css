@@ -1,4 +1,5 @@
 body { background-color: white; }
+input[type="text"], input[type="password"], select { height: 1.8em; }
 
 #container {
     background-color: #fff; /* Background color */
@@ -8,6 +9,9 @@ body { background-color: white; }
     padding: 0;             /* Amount of negative space around the inside of the body */
 }
 
+.red { color: #CC0000; }
+.black { color: #000000; }
+.gray { color: #666666; }
 .flash { text-align: center; color: #cc0000; font-weight: bold; }
 .clear { clear: both; }  
 .invoicedetail { color: #777777; }
@@ -20,6 +24,10 @@ body { background-color: white; }
 ul.rounded_form { background-color: #ededed; padding: 0;}
 ul.rounded_form li:first-child, ul.rounded_form li:first-child a { border-top: 0; -webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;}
 ul.rounded_form li:last-child, ul.rounded_form li:last-child a { -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px;}
+ul.rounded_form label { padding-left: 10px; }
+ul.rounded_form li.menu { -webkit-padding-start: 20px; }
+
+#invoice_form .ajax_link { color: #666666; }
 
 #progress {
 	-webkit-border-radius: 10px;
