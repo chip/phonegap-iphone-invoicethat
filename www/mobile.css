@@ -17,7 +17,7 @@ body { background-color: white; }
 .draft { color: #CC0000; }
 .sent { color: #0000CC; }
 .paid { color: #00CC00; }
-ul.rounded_form { background-color: #ededed; padding: 10px 0 0 10px;}
+ul.rounded_form { background-color: #ededed; padding: 0;}
 ul.rounded_form li:first-child, ul.rounded_form li:first-child a { border-top: 0; -webkit-border-top-left-radius: 8px;-webkit-border-top-right-radius: 8px;}
 ul.rounded_form li:last-child, ul.rounded_form li:last-child a { -webkit-border-bottom-left-radius: 8px; -webkit-border-bottom-right-radius: 8px;}
 

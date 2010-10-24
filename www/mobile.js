@@ -5,6 +5,26 @@
 var jQT = new $.jQTouch({
 	cacheGetRequests: false,
 	preloadImages: [
+		'/images/logo.png',
+		'./jqtouch/themes/apple/img/actionButton.png',
+		'./jqtouch/themes/apple/img/backButton.png',
+		'./jqtouch/themes/apple/img/blueButton.png',
+		'./jqtouch/themes/apple/img/cancel.png',
+		'./jqtouch/themes/apple/img/chevron.png',
+		'./jqtouch/themes/apple/img/grayButton.png',
+		'./jqtouch/themes/apple/img/greenButton.png',
+		'./jqtouch/themes/apple/img/listArrowSel.png',
+		'./jqtouch/themes/apple/img/listGroup.png',
+		'./jqtouch/themes/apple/img/loading.gif',
+		'./jqtouch/themes/apple/img/on_off.png',
+		'./jqtouch/themes/apple/img/pinstripes.png',
+		'./jqtouch/themes/apple/img/redButton.png',
+		'./jqtouch/themes/apple/img/selection.png',
+		'./jqtouch/themes/apple/img/thumb.png',
+		'./jqtouch/themes/apple/img/toggle.png',
+		'./jqtouch/themes/apple/img/toggleOn.png',
+		'./jqtouch/themes/apple/img/toolButton.png',
+		'./jqtouch/themes/apple/img/toolbar.png',
 		'./jqtouch/themes/apple/img/whiteButton.png'
 	]
 });
@@ -16,7 +36,7 @@ $(function() {
 	// BUY SSL CERT FOR m.invoicethat.com
 	var base_url = devel ? 'http://m.invoicethat.local' : 'http://m.invoicethat.com';
 	
-	$.LoadUrl = function(path) {
+	$.LoadUrlPhoneGap = function(path) {
 		var $url = base_url + path;
   		$.ajax({
 			type:       "GET",
@@ -31,6 +51,6 @@ $(function() {
 	
 	$("a#login_link, a#pricing_link").click(function () {
 		//navigator.notification.alert("alert", "title", "OK");
-		return $.LoadUrl($(this).attr('href'));
+		return $.LoadUrlPhoneGap($(this).attr('href'));
 	});
 });
