@@ -9,7 +9,6 @@ var jQT = new $.jQTouch({
 	]
 });
 
-//alert('inside mobile.js after jQT');
 $(function() {
 	
 	// SET TO true BEFORE APP SUBMISSION
@@ -18,24 +17,20 @@ $(function() {
 	var base_url = devel ? 'http://m.invoicethat.local' : 'http://m.invoicethat.com';
 	
 	$.LoadUrl = function(path) {
-		//alert('append progress to body.  path=' + path);
-		$('body').append('<div id="progress">Loading...</div>');
-		var $url = base_url + $(path).attr("href");
-		$.get($url, function(data) {
-			  //alert('phonegap: LoadUrl url=' + $url);
-			  $('.current#home').html(data);
-		});
-		$('#progress').remove();
+		var $url = base_url + path;
+  		$.ajax({
+			type:       "GET",
+			url:        $url,
+			success:    function(data, status, xhr) { $('.current#home').html(data); },
+			error:		function(xhr, status, error) { alert("Error: " + error + "\nstatus = " + status); },
+			beforeSend: function(xhr) { $('#progress').show(); },
+			complete:	function(xhr, status) { $('#progress').hide(); } 
+		 });
 		return false;
 	};
 	
-
-	$("a#login").click(function (e) {
+	$("a#login_link, a#pricing_link").click(function () {
 		//navigator.notification.alert("alert", "title", "OK");
-		return $.LoadUrl("a#login");
-	});
-
-	$("a#pricing").click(function (e) {
-		return $.LoadUrl("a#pricing");
+		return $.LoadUrl($(this).attr('href'));
 	});
 });
