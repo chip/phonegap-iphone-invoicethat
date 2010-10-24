@@ -14,13 +14,13 @@
 	<!-- iPad/iPhone specific css below, add after your main css -->
 	<link rel="stylesheet" media="only screen and (max-device-width: 1024px)" href="ipad.css" type="text/css" />
 	<link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="iphone.css" type="text/css" />
-
+	
 	<script type="text/javascript" charset="utf-8" src="./jqtouch/jquery.1.3.2.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="./jqtouch/jqtouch.js"></script>
 	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
 	<script type="text/javascript" charset="utf-8" src="mobile.js"></script>
   </head>
-	<body>
+	<body id="body">
 		<div class="current" id="home">
 			<div class="toolbar">
 				<h1></h1>
@@ -33,10 +33,11 @@
 					</p>	
 					<br />
 				</div>
-					
-				<div class="clear"></div>
-				<div id="progress" style="display: none;">Loading...</div>
-									
+				
+				<div id="progress" style="display: none;">
+					Loading...
+				</div>
+				
 				<div id="overview" align="center">
 					Web-based invoicing made easy
 					<br />
@@ -46,19 +47,19 @@
 					<br />
 					<br />					
 					<ul class="rounded">
-						<li><a class="whiteButton" href="/login" id="login">Yes</a></li>
+						<li><a class="whiteButton" href="/login" id="login_link">Yes</a></li>
 					</ul>
 					<ul class="rounded">
-						<li><a class="whiteButton" href="/pricing" id="pricing">No</a></li>
+						<li><a class="whiteButton" href="/pricing" id="pricing_link">No</a></li>
 					</ul>
 					<br />
 				</div>
-			</div>	
-		</div>
-		<div id="footer" class="info">
-			<small>Provided by 
-				<a href="http://chipcastle.com" id="footer_link" target="_blank">Chip Castle Dot Com, Inc.</a>
-			</small>
+			</div>
+			<div id="footer" class="info">
+				<small>Provided by 
+					<a href="http://chipcastle.com" id="footer_link" target="_blank">Chip Castle Dot Com, Inc.</a>
+				</small>
+			</div>
 		</div>
 	</body>
 </html>
