@@ -4,6 +4,7 @@
 
 var jQT = new $.jQTouch({
 	cacheGetRequests: false,
+	useFastTouch: true,
 	preloadImages: [
 		'/images/logo.png',
 		'./jqtouch/themes/apple/img/actionButton.png',
@@ -30,7 +31,9 @@ var jQT = new $.jQTouch({
 });
 
 $(function() {
-	
+
+  //debug.log('before setting devel');
+  
 	// SET TO true BEFORE APP SUBMISSION
 	var devel = true;
 	// BUY SSL CERT FOR m.invoicethat.com
@@ -53,4 +56,6 @@ $(function() {
 		//navigator.notification.alert("alert", "title", "OK");
 		return $.LoadUrlPhoneGap($(this).attr('href'));
 	});
+
+
 });
